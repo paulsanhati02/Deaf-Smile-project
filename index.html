@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Home</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+
+<div class="container">
+   <a href="index.html"><img src="Images\My project (1).png"  width="200" height="200" class="logo"></a>
+    </div>
+    <div class="name">
+      <strong>DEAF</strong>SMILE<br>
+  </div>
+
+
+<div class="navbar">
+<nav>    
+       <a href="index.html">Home</a> 
+       <a href="about.html">About us</a>  
+       <a href="Gallery.html">Gallery</a>  
+       <a href="contact.html">Contact us</a> 
+   
+ </nav>
+</div>
+ 
+<div class="slider">
+    <img src="Images\smile childs.jpg">
+    </div>
+    
+    <div class="container5">
+      <h2>"Love is patient and kind, it is never jealous, love is never boastful or conceited, it is never rude or selfish, it does not take offence, nor is it resentful. Love takes no pleasure in others’ sins but delights in the truth; it is always ready to excuse, to trust, to hope and to endure whatever comes. Love does not come to an end. There are three things that last: faith, hope and love and the greatest of these is love." When you love, you love with your body, with your heart, with your mind, but not with eyes!
+         As Shakespeare said , “Love is blind!”. Love is deaf! Love makes the world goes round! Firstly, when somebody is in love you can feel it. People who fall in love are just like the sun. You can see the sunrise and the sunset in their eyes, in their heart, everywhere! They are blind! They can't see people around them, but just the one they love. They are deaf! They can't hear people gossiping or saying bad things, but just lovely whispers. Love takes you to the heaven and makes you kinder, more beautiful. Secondly, love doesn't need colours or sounds! Love is beauty, love is music! It's imposibile to find a defect in something that is perfect .Love is perfect! The one you love is perfect for you! You don't need eyes or ears to see and to hear this. Just look carefuly in you heart, listen to it and when your mind will tell you ''He is the one” , that means he is the one!
+         To love means to live! When your heart is empty, you can consider yourself dead. Love is like food , water and air! You are not able to live without them. Likewise love makes you childish. You have the same innocence and the same pure soul. You are living in the clouds and nothing can make you down to earth. Love is an endless play, a dance of kisses, hugs and whispers! Children don't judge people for their faces. They learn to love every creature of God starting with little things like a smile or a tear and ending with people.Children judge with soul, we judge with eyes, with mind, with everything, but not with heart. Love teaches us to judge with soul and probably this is the most important lesson that love gives us.When you love, you love both the qualities, as well as defects of your “perfect man” or “perfect woman”! In conclusion, I choose to end with one of my favourite quotations of Shakespeare: “And when love speaks, the voice of all the gods makes heaven drowsy with the harmony.”So, love is sometimes more powerful than God and we are not worthy to oppose to love. Love is blind, love is deaf, love don't judge people for their face, but for their soul!
+      </h2>
+    </div>
+      </body>
+      
+      <style>
+          * {
+          box-sizing: border-box;
+          }
+          .img-container {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+          }
+          .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+          }
+          </style>
+          </head>
+          <body>
+          <div class="clearfix">
+          <div class="img-container">
+          <img src="Images\1.jpg" alt="bondhu group" style="width:100%">
+          </div>
+          <div class="img-container">
+          <img src="Images\2.jpg" alt="gallery 3" style="width:100%">
+          </div>
+          <div class="img-container">
+          <img src="Images\3.jpg" alt="gallery 6" style="width:100%">
+          </div>
+          </div>
+        </div>   
+       
+        <br>
+        <br>
+        <style>
+         * {
+           box-sizing: border-box;
+         }
+         
+         body {
+           margin: 0;
+           font-family: Arial;
+         }
+         
+         
+         .column {
+           float: left;
+           width: 25%;
+           padding: 10px;
+         }
+         
+         
+         .column img {
+           opacity: 0.8; 
+           cursor: pointer; 
+         }
+         
+         .column img:hover {
+           opacity: 1;
+         }
+         
+         
+         .row:after {
+           content: "";
+           display: table;
+           clear: both;
+         }
+         
+         
+         .container4 {
+           position: relative;
+           display: none; 
+           height: 500px;
+           width: 700px;
+           padding-bottom: 1000px;
+         }
+         
+         
+         #imgtext {
+           position: absolute;
+           bottom: 15px;
+           left: 15px;
+           color: white;
+           font-size: 20px;
+         }
+         
+         
+         .closebtn {
+           position: absolute;
+           top: 10px;
+           right: 15px;
+           color: black;
+           font-size: 35px;
+           cursor: pointer;
+         }
+         </style>
+         </head>
+         <body>
+         
+         <div style="text-align:center">
+           <h1>NEWS</h1>
+           <p>Click on the images below:</p>
+         </div>
+         
+         <!-- The four columns -->
+         <div class="row">
+           <div class="column">
+             <img src="Images\news 1.jpg"  style="width:100%" onclick="myFunction(this);">
+           </div>
+           <div class="column">
+             <img src="Images\news 5.jpg"  style="width:100%" onclick="myFunction(this);">
+           </div>
+           <div class="column">
+             <img src="Images\news 3.jpg"  style="width:100%" onclick="myFunction(this);">
+           </div>
+           <div class="column">
+             <img src="Images\news 4.jpg"  style="width:100%" onclick="myFunction(this);">
+           </div>
+         </div>
+         
+         <div class="container4">
+           <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+           <img id="expandedImg" style="width:100%">
+           <div id="imgtext"></div>
+         </div>
+         
+         <script>
+         function myFunction(imgs) {
+           var expandImg = document.getElementById("expandedImg");
+           var imgText = document.getElementById("imgtext");
+           expandImg.src = imgs.src;
+           imgText.innerHTML = imgs.alt;
+           expandImg.parentElement.style.display = "block";
+         }
+         </script>
+ <!---------- Footer HTML Starts --------->
+
+
+
+ <br>
+ <div class="footer">
+   <div class="container">
+      <div class="footer-sect">
+         <h2>Best Institute For Education</h2>
+         <p>“I don't use the word "can't" because I don't believe in limiting myself. I am able. I am capable. I am strong. Never think less of yourself because society expects you to behave in a certain way. We decide our own limits. I have chosen to have none.”</p>
+         <a href="https://www.facebook.com/sanhati.paul"><img src="Images\Facebook.png" width="50" height="50"> </a>
+         <a href="https://www.instagram.com/paul.sanhati02/"><img src="Images\logo-ig-png-32473.png" width="50" height="50"> </a>
+      </div>
+      <div class="footer-sect">
+         <h2>Quick Links</h2>
+         <ul class="footer-menu">
+            <li><a href="index.html"> > Home</a></li>
+            <li><a href="about.html"> > About us</a></li>
+            <li><a href="Gallery.html"> > Gallery</a></li>
+            <li><a href="contact.html"> > Contact Us</a></li>
+         </ul>
+      </div>
+      <div class="footer-sect">
+         <h2>Contact Info</h2>
+         <ul class="footer-contact">
+            <li><b>Email :</b> reply@deafsmile.com </li>
+            <li><b>Call :</b> +91 -123 456 7890 </li>
+            <li><b>Fax :</b> +91 -123 4567890 </li>
+            <li><b>Website :</b> https://www.deafsmile.com </li>
+         </ul>
+      </div>
+   </div>
+</div>
+</body>
+</html>
+ 
